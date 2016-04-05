@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/affirmorder_textview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="订单确认"
+            android:textColor="#fff153"
+            android:textSize="@dimen/martop20" />
+
+        <View style="@style/view_horizontal" />
+
+        <TextView
+            android:id="@+id/confirm_tv_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="继续购物"
+            android:textColor="#fff153" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/affirmorder_ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="@dimen/martop10"
+                        android:src="@drawable/order_left" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/affirmorder_textview_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/affirmorder_textview_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/affirmorder_textview_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/el_right" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/order_bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/affirmorder_ll_pstime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/martop48"
+                android:layout_marginTop="@dimen/martop10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/martop10"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/ord_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="配送时间"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <TextView
+                    android:id="@+id/affirmorder_textview_pstime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/order_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/affrimeorder_ll_site"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/martop48"
+                android:layout_marginTop="@dimen/martop10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/martop10"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/ord_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="配送分店"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <TextView
+                    android:id="@+id/affirmorder_textview_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/order_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/affirmorder_ll_pay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/martop48"
+                android:layout_marginTop="@dimen/martop10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/martop10"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/ord_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="支付方式"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <TextView
+                    android:id="@+id/affirmorder_textview_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/order_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/martop48"
+                android:layout_marginTop="@dimen/martop10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/martop10"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/ord_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="闻氏礼券"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/textSize_mm" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/martop10"
+                    android:src="@drawable/order_right" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/affirmorder_listview_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/martop10" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/martop10"
+                        android:text="商品总额 :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_ll" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textSize_ll" />
+
+                    <TextView
+                        android:id="@+id/affirmorder_textview_allprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textSize_ll" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/martop10"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/martop10"
+                        android:text="优惠金额:"
+                        android:textSize="@dimen/textSize_ll" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥" />
+
+                    <TextView
+                        android:id="@+id/affirmorder_textview_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/martop48"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="应付金额 : "
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_mm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#fff153"
+            android:textSize="@dimen/textSize_ll" />
+
+        <TextView
+            android:id="@+id/affirmorder_textview_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#fff153"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_horizontal" />
+
+        <Button
+            android:id="@+id/affirmorder_button_okorder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fddc00"
+            android:paddingLeft="@dimen/martop10"
+            android:paddingRight="@dimen/martop10"
+            android:text="提交订单"
+            android:textColor="#0B6201"
+            android:textSize="@dimen/textSize_ll" />
+    </LinearLayout>
+
+</LinearLayout>

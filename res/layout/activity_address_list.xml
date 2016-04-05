@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressListActivity" >
+
+    <LinearLayout
+        android:id="@+id/add_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:id="@+id/add_title_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_left" />
+
+        <TextView
+            android:id="@+id/add_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="当季水果"
+            android:textColor="@color/textyellow"
+            android:textSize="@dimen/textSize_sll" />
+
+        <View style="@style/view_vertical" />
+
+        <TextView
+            android:id="@+id/add_title_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:text="清空"            
+             />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/add_lv"
+        android:layout_below="@id/add_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_add"
+         />
+    
+    
+    <TextView 
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="添加新地址"
+        android:textSize="16sp"
+        android:textColor="@color/textyellow"
+        android:layout_alignParentBottom="true"
+        android:background="#0B6201"
+        />
+    
+
+</RelativeLayout>

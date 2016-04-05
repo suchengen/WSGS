@@ -1,0 +1,91 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+    <!-- 横向权重 -->
+    <style name="view_horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+    <!-- 竖向权重 -->
+    <style name="view_vertical">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 横线 -->
+    <style name="view_lines_vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+    <!-- 竖线 -->
+    <style name="view_lines_horizontal">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+    <!-- 返回键的点击效果 -->
+    <style name="click_imageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:src">@drawable/back</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- title中间 -->
+    <style name="textView_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 右上 -->
+    <style name="right_top">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 首页样式 -->
+    <style name="main_main_bottom_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_full</item>
+        <item name="android:minHeight">13.5dip</item>
+        <item name="android:maxHeight">13.5dip</item>
+        <item name="android:minWidth">13.5dip</item>
+        <item name="android:maxWidth">13.5dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

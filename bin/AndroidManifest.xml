@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.catdog.wsgs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 允许一个程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许一个程序访问精良位置(如GPS) (Allows an application to access fine -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许应用程序访问额外的位置提供命令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 允许程序创建模拟位置提供用于测试 -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+'
+
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许一个程序通过账户验证方式访问账户管理ACCOUNT_MANAGER相关信息 -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 允许一个程序广播常用intents -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 允许一个程序初始化一个电话拨号不需通过拨号用户界面需要用户确认 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问闪光灯,Android开发网提示HTC Dream不包含闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 访问一个帐户列表在Accounts Service中 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序调用killBackgroundProcesses(String).方法结束后台进程 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 允许程序修改全局音频设置 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序执行NFC近距离通讯操作，用于移动支持 -->
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- 允许程序读取用户联系人数据 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序读取底层系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 访问电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序读取短信息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许程序监控一个将收到短信息，记录或处理 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 许一个程序打开窗口使用TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序请求验证从AccountManager -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 允许访问振动设备 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许使用PowerManager的WakeLocks保持进程在休眠时从屏幕消失 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.catdog.base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="MlKRL3Gm7BKpyBoF3BNfIsMH" />
+
+        <activity android:name="com.catdog.activity.WelComeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.catdog.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 登录 -->
+        <activity android:name="com.catdog.activity.login.LoginActivity" />
+        <!-- 注册 -->
+        <activity android:name="com.catdog.activity.login.RegisterActivity" />
+
+        <!-- 确认订单 -->
+        <activity
+            android:name="com.catdog.wsgs.wxapi.AffirmOrderActivity"
+            android:exported="true"
+            android:parentActivityName="com.jiazheng.basic.BaseActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx4d1b505d6020d737" />
+            </intent-filter>
+        </activity>
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.catdog.wsgs.wxapi.OrderActivity"
+            android:exported="true"
+            android:parentActivityName="com.jiazheng.basic.BaseActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx4d1b505d6020d737" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jiazheng.basic.BaseActivity" />
+        </activity>
+        <!-- 配送时间 -->
+        <activity android:name="com.catdog.activity.order.PSTimeActivity" />
+        <!-- 配送分店 -->
+        <activity android:name="com.catdog.activity.order.SiteActivity" />
+        <!-- 支付方式 -->
+        <activity android:name="com.catdog.activity.order.PayActivity" />
+        <activity
+            android:name="com.catdog.activity.InfoActivity"
+            android:label="@string/title_activity_info" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ChangePwdActivity"
+            android:label="@string/title_activity_change_pwd" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ChangeNameActivity"
+            android:label="@string/title_activity_change_name" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.AddressListActivity"
+            android:label="@string/title_activity_address_list" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.AddAddressActivity"
+            android:label="@string/title_activity_add_address" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.MyCollectActivity"
+            android:label="@string/title_activity_my_collect" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ClassifyActivity"
+            android:label="@string/title_activity_classify" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ShopDetailActivity"
+            android:label="@string/title_activity_shop_detail" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.CommentActivity"
+            android:label="@string/title_activity_comment" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ChangeEmailActivity"
+            android:label="@string/title_activity_change_email" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ChangePhoneActivity"
+            android:label="@string/title_activity_change_email" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ShoPicActivity"
+            android:label="@string/title_activity_sho_pic" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.ForgetPwdActivity"
+            android:label="@string/title_activity_forget_pwd" >
+        </activity>
+        <activity
+            android:name="com.catdog.wsgs.ChangePhoneActivity"
+            android:label="@string/title_activity_change_phone" >
+        </activity>
+        <activity
+            android:name="com.catdog.activity.order.OrderCommentActivity"
+            android:label="@string/title_activity_change_phone" >
+        </activity>
+        <activity
+            android:name="com.catdog.fragment.SearchAtivity"
+            android:label="@string/title_activity_change_phone" >
+        </activity>
+        <activity
+            android:name="com.catdog.wsgs.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx4d1b505d6020d737" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

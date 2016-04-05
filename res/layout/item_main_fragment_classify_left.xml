@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_ganguo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_main_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/iv_main_fragment_class_bean_left"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_main_fragment_ad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#afa"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_main_fragment_second_image1"
+                    android:layout_width="@dimen/main_fragment_list_second_image_size"
+                    android:layout_height="@dimen/main_fragment_list_second_image_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/iv_main_fragment_second_image1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_main_fragment_second_image1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="蛇果很好吃"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main_fragment_name1"
+                    android:layout_below="@+id/tv_main_fragment_name1"
+                    android:layout_marginTop="3dp"
+                    android:text="￥12.00"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_add_cart1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_main_fragment_second_image1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/shop"
+                    android:text="加入购物车"
+                    android:textColor="#f00"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#afafaf" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_main_fragment_second_image2"
+                    android:layout_width="@dimen/main_fragment_list_second_image_size"
+                    android:layout_height="@dimen/main_fragment_list_second_image_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/iv_main_fragment_second_image2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_main_fragment_second_image2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="蛇果很好吃"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_main_fragment_name2"
+                    android:layout_below="@+id/tv_main_fragment_name2"
+                    android:layout_marginTop="3dp"
+                    android:text="￥12.00"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_main_fragment_add_cart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_main_fragment_second_image2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/shop"
+                    android:text="加入购物车"
+                    android:textColor="#f00"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_main_fragment_buttom1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/wireframe_graybg_grayline"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="苹果类"
+            android:textColor="@color/base_green_color" />
+
+        <View
+            android:layout_width="5px"
+            android:layout_height="5px" />
+
+        <TextView
+            android:id="@+id/tv_main_fragment_buttom2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/wireframe_graybg_grayline"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="橘类"
+            android:textColor="@color/base_green_color" />
+
+        <View
+            android:layout_width="5px"
+            android:layout_height="5px" />
+
+        <TextView
+            android:id="@+id/tv_main_fragment_buttom3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/wireframe_graybg_grayline"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="葡萄类"
+            android:textColor="@color/base_green_color" />
+
+        <View
+            android:layout_width="5px"
+            android:layout_height="5px" />
+
+        <TextView
+            android:id="@+id/tv_main_fragment_buttom4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/wireframe_graybg_grayline"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="更多"
+            android:textColor="@color/base_green_color" />
+    </LinearLayout>
+
+</LinearLayout>

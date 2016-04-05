@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="size_b">20sp</dimen>
+    <dimen name="size_m">18sp</dimen>
+    <dimen name="size_ms">16sp</dimen>
+    <dimen name="size_ss">14sp</dimen>
+    <dimen name="size_sss">12sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tag_corner_radius">5.0dip</dimen>
+    <dimen name="tag_horizontal_spacing">8.0dip</dimen>
+    <dimen name="tag_vertical_spacing">6.0dip</dimen>
+    <dimen name="common_margin">12.0dip</dimen>
+    <dimen name="common_margin_10">10.0dip</dimen>
+    <dimen name="textSize_ss">12sp</dimen>
+    <dimen name="textSize_mm">14sp</dimen>
+    <dimen name="textSize_ll">16sp</dimen>
+    <dimen name="textSize_sll">20sp</dimen>
+    <dimen name="height30">30dp</dimen>
+    <dimen name="height80">80dp</dimen>
+    <dimen name="witch250">240dp</dimen>
+    <dimen name="height60">60dp</dimen>
+    <dimen name="marginleft10">10dp</dimen>
+    <dimen name="marginleft20">20dp</dimen>
+    <dimen name="height50">50dp</dimen>
+    <dimen name="gainhigh">200dp</dimen>
+    <dimen name="martop30">30dp</dimen>
+    <dimen name="martop15">15dp</dimen>
+    <dimen name="btmarleft">15dp</dimen>
+    <dimen name="btmarright">15dp</dimen>
+    <dimen name="searchHeight">32dp</dimen>
+    <dimen name="imageHeight">80dp</dimen>
+    <dimen name="image100">80dp</dimen>
+    <dimen name="gaintop">30dp</dimen>
+    <dimen name="image30">30dp</dimen>
+    <dimen name="imagesix">60dp</dimen>
+    <dimen name="image70">70dp</dimen>
+    <dimen name="image90">90dp</dimen>
+    <dimen name="image120">120dp</dimen>
+    <dimen name="image60">70dp</dimen>
+    <dimen name="image55">55dp</dimen>
+    <dimen name="image40">40dp</dimen>
+    <dimen name="martop5">5dp</dimen>
+    <dimen name="martop20">20dp</dimen>
+    <dimen name="martop18">18dp</dimen>
+    <dimen name="martop10">10dp</dimen>
+    <dimen name="martop13">12dp</dimen>
+    <dimen name="martop48">48dp</dimen>
+    <dimen name="picheigh160">160dp</dimen>
+    <dimen name="image190">181dp</dimen>
+    <dimen name="gainwid">289dp</dimen>
+    <dimen name="image45">45dp</dimen>
+    <dimen name="margin1.5">1.5dp</dimen>
+    <dimen name="image28">30dp</dimen>
+    <dimen name="pad8">8dp</dimen>
+    <dimen name="listview_item_height">30dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 工具栏上按钮的间距 -->
+    <dimen name="picture_action_bar_button_margin">0dp</dimen>
+    <dimen name="picture_action_bar_height">48dp</dimen>
+    <!-- 重新加载文字字体大小 -->
+    <dimen name="picture_reload_text_size">16dp</dimen>
+    <!-- 图集标题字体大小 -->
+    <dimen name="picture_album_title_text_size">12dp</dimen>
+    <!-- 图集中图片数量字体大小 -->
+    <dimen name="picture_count_text_size">12dp</dimen>
+    <!-- 图集View的间隔 -->
+    <dimen name="picture_album_view_margin">8dp</dimen>
+    <dimen name="picture_album_view_margin_bottom">9dp</dimen>
+    <dimen name="picture_album_text_margin">6dp</dimen>
+    <dimen name="picture_album_column_margin">5dp</dimen>
+    <dimen name="picture_album_top_margin">10dp</dimen>
+    <dimen name="picture_album_item_title_height">30dp</dimen>
+    <!-- 工具栏上显示1/6文字的字体大小 -->
+    <dimen name="picture_action_bar_page_index_text_size">18dp</dimen>
+    <!-- 用户引导边距 -->
+    <dimen name="picture_user_guide_margin">8dp</dimen>
+    <!-- 正在加载文本上边距 -->
+    <dimen name="picture_loading_text_top_margin">12dp</dimen>
+    <dimen name="picHeight">160dp</dimen>
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <!-- 聊天 -->
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <!-- tag -->
+
+    <dimen name="main_fragment_list_second_image_size">48dp</dimen>
+
+</resources>

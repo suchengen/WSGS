@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afafaf"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shouyelogo" />
+
+        <TextView
+            android:id="@+id/search1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/wireframe_whitebg_grayline"
+            android:drawableLeft="@drawable/search"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical" >
+
+                    <com.catdog.view.MyViewPager
+                        android:id="@+id/fragment1_viewpager_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                    </com.catdog.view.MyViewPager>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_layout_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/main_fragment_shuiguo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/shuiguo"
+                        android:gravity="center_horizontal"
+                        android:text="水果" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_shucai"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/shucai"
+                        android:gravity="center_horizontal"
+                        android:text="蔬菜" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_roudanqin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/roudan"
+                        android:gravity="center_horizontal"
+                        android:text="肉蛋禽" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_dongpin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/dongpin"
+                        android:gravity="center_horizontal"
+                        android:text="冻品类" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_shuichan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/shuichan"
+                        android:gravity="center_horizontal"
+                        android:text="水产类" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/main_fragment_ganguo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ganguo"
+                        android:gravity="center_horizontal"
+                        android:text="干果" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_gandiao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/gantiao"
+                        android:gravity="center_horizontal"
+                        android:text="干调粮油" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_shangchao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/shangchao"
+                        android:gravity="center_horizontal"
+                        android:text="商超" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_jiagong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/jiagong"
+                        android:gravity="center_horizontal"
+                        android:text="加工产品" />
+
+                    <TextView
+                        android:id="@+id/main_fragment_order"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/order"
+                        android:gravity="center_horizontal"
+                        android:text="订单查询" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.catdog.view.MyListView
+                android:id="@+id/lv_main_fragment_classify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.catdog.view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

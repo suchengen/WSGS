@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyCollectActivity" >
+
+    
+    <LinearLayout
+        android:id="@+id/add_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+
+       <TextView
+            android:id="@+id/collect_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="我的收藏"
+            android:drawableLeft="@drawable/cart_left"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/textyellow"
+            android:textSize="@dimen/textSize_sll" />
+
+        <View style="@style/view_vertical" />
+
+        <TextView
+            android:id="@+id/collect_tv_right"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+			android:text="清空"      
+			android:textColor="@color/textyellow"      
+             />
+        
+    </LinearLayout>
+    
+    <GridView 
+        android:id="@+id/collect_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        ></GridView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeEmailActivity" >
+
+    <LinearLayout
+        android:id="@+id/add_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:id="@+id/email_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_left" />
+
+        <TextView
+            android:id="@+id/add_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="修改邮箱"
+            android:textColor="@color/textyellow"
+            android:textSize="@dimen/textSize_sll" />
+
+        <View style="@style/view_vertical" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/change_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/martop10"
+        android:background="@drawable/pswd_out"
+        android:ems="10"
+        android:padding="@dimen/martop5"
+        android:textSize="@dimen/textSize_mm" >
+    </EditText>
+
+    <Button
+        android:id="@+id/change_btn_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_shape"
+        android:text="保    存"
+        android:textColor="@color/textyellow" />
+
+</LinearLayout>

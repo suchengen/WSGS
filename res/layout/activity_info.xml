@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoActivity" >
+
+    <LinearLayout
+        android:id="@+id/add_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#0B6201"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:id="@+id/info_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_left" />
+
+        <TextView
+            android:id="@+id/add_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="个人资料"
+            android:textColor="@color/textyellow"
+            android:textSize="@dimen/textSize_sll" />
+
+        <View style="@style/view_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="闻氏头像"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_vertical" />
+
+        <com.catdog.view.RoundImageView
+            android:id="@+id/info_rimg_head"
+            android:layout_width="@dimen/image40"
+            android:layout_height="@dimen/image40"
+            android:layout_marginRight="@dimen/martop10"
+            android:src="@drawable/info_tx" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_right" />
+    </LinearLayout>
+
+    <View style="@style/view_lines_vertical" />
+
+    <LinearLayout
+        android:id="@+id/info_ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="用户名"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_right" />
+    </LinearLayout>
+    
+    <View style="@style/view_lines_vertical"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/info_ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="邮箱"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_right" />
+    </LinearLayout>
+
+    <View style="@style/view_lines_vertical" />
+
+    <LinearLayout
+        android:id="@+id/info_ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="手机号码"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_right" />
+    </LinearLayout>
+
+    <View style="@style/view_lines_vertical" />
+
+    <LinearLayout
+        android:id="@+id/info_ll_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/martop10"
+            android:text="修改密码"
+            android:textSize="@dimen/textSize_ll" />
+
+        <View style="@style/view_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_right" />
+    </LinearLayout>
+
+    <View style="@style/view_lines_vertical" />
+
+    <View style="@style/view_vertical" />
+
+    <TextView
+        android:id="@+id/info_textview_exit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/base_green_color"
+        android:gravity="center"
+        android:text="退出当前账号"
+        android:textColor="@color/text_orange"
+        android:textSize="20sp" />
+
+</LinearLayout>
