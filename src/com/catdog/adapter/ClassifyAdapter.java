@@ -32,6 +32,7 @@ public class ClassifyAdapter extends BaseAdapter implements OnClickListener{
 	private LoadImageHelper imageHelper;
 	private List<MyGridView> list = new ArrayList<MyGridView>();
 
+	
 	public ClassifyAdapter(Context mContext,List<Recordset> mData){
 		this.mContext = mContext;
 		this.mData = mData;
