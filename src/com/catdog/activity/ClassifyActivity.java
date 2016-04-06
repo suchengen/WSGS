@@ -15,8 +15,8 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.Response.ErrorListener;
@@ -40,11 +40,11 @@ import com.handmark.pulltorefresh.library.PullToRefreshAdapterViewBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshGridView;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 public class ClassifyActivity extends BaseActivity implements OnClickListener {
 	private static final String TAG = ClassifyActivity.class.getSimpleName();
-	private PullToRefreshGridView mGridView;
+	private PullToRefreshListView mGridView;
 	private ImageView img_left;
 	private TextView tv_title;
 	private Button classify_button_1, classify_button_2, classify_button_3;
@@ -57,6 +57,10 @@ public class ClassifyActivity extends BaseActivity implements OnClickListener {
 	private ClassifyListAdapter mAdapter;
 	private List<Recordsets> list_data = new ArrayList<ClassifyListBean.Recordsets>();
 	private MyProgressDialog dialog;
+	private Button btnBack;
+
+	private int currentPage = 0;
+
 	private Handler handler = new Handler() {
 
 		public void handleMessage(android.os.Message msg) {
@@ -127,8 +131,12 @@ public class ClassifyActivity extends BaseActivity implements OnClickListener {
 		} else {
 			// 首页活动
 			int_tag = tag;
-			requestClass(currenpage, int_tag, null);
+			int classID = intent.getIntExtra(URLConstant.CLASS_ID, 0);
+			id = String.valueOf(classID);
+			requestClass(currenpage, int_tag, String.valueOf(id));
 		}
+
+		classify_button_1.setSelected(true);
 
 	}
 
@@ -220,31 +228,31 @@ public class ClassifyActivity extends BaseActivity implements OnClickListener {
 	};
 
 	private void initView() {
-		// TODO Auto-generated method stub
 		img_left = (ImageView) findViewById(R.id.class_title_img_left);
 		img_left.setOnClickListener(this);
 		tv_title = (TextView) findViewById(R.id.class_title_text);
-		mGridView = (PullToRefreshGridView) findViewById(R.id.class_gv);
-		mGridView.getRefreshableView().setNumColumns(2);
+		mGridView = (PullToRefreshListView) findViewById(R.id.class_gv);
 		classify_button_1 = (Button) findViewById(R.id.classify_button_1);
 		classify_button_1.setOnClickListener(this);
 		classify_button_2 = (Button) findViewById(R.id.classify_button_2);
 		classify_button_2.setOnClickListener(this);
 		classify_button_3 = (Button) findViewById(R.id.classify_button_3);
 		classify_button_3.setOnClickListener(this);
+		btnBack = (Button) findViewById(R.id.btn_classify_back);
+		btnBack.setOnClickListener(this);
 	}
 
-	OnRefreshListener<GridView> refreshListener = new OnRefreshListener<GridView>() {
+	OnRefreshListener<ListView> refreshListener = new OnRefreshListener<ListView>() {
 
 		@Override
-		public void onRefresh(PullToRefreshBase<GridView> refreshView) {
+		public void onRefresh(PullToRefreshBase<ListView> refreshView) {
 			// TODO 自动生成的方法存根
-			if (((PullToRefreshAdapterViewBase<GridView>) refreshView)
+			if (((PullToRefreshAdapterViewBase<ListView>) refreshView)
 					.isFooterShown()) {
 
 				currenpage += 1;
 				requestClass(currenpage, int_tag, id);
-			} else if (((PullToRefreshAdapterViewBase<GridView>) refreshView)
+			} else if (((PullToRefreshAdapterViewBase<ListView>) refreshView)
 					.isHeaderShown()) {
 				currenpage = 1;
 				list_data.clear();
@@ -258,41 +266,46 @@ public class ClassifyActivity extends BaseActivity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch (v.getId()) {
+		case R.id.btn_classify_back:
+			this.finish();
+			break;
 		case R.id.class_title_img_left:
 			finish();
 			break;
 		case R.id.classify_button_1:
+			if (0 == currentPage) {
+				return;
+			}
+			currentPage = 0;
+			classify_button_1.setSelected(true);
+			classify_button_2.setSelected(false);
+			classify_button_3.setSelected(false);
 			list_data.clear();
-			classify_button_1.setTextColor(getResources().getColor(
-					R.color.base_green_color));
-			classify_button_2.setTextColor(getResources().getColor(
-					R.color.black));
-			classify_button_3.setTextColor(getResources().getColor(
-					R.color.black));
 			orderby = "";
 			requestClass(currenpage, int_tag, id);
 			break;
 		case R.id.classify_button_2:
+			if (1 == currentPage) {
+				return;
+			}
+			currentPage = 1;
+			classify_button_1.setSelected(false);
+			classify_button_2.setSelected(true);
+			classify_button_3.setSelected(false);
 			list_data.clear();
-			classify_button_1.setTextColor(getResources().getColor(
-					R.color.black));
-			classify_button_2.setTextColor(getResources().getColor(
-					R.color.base_green_color));
-			classify_button_3.setTextColor(getResources().getColor(
-					R.color.black));
 			orderby = "n_zkj";
 			requestClass(currenpage, int_tag, id);
 			break;
 		case R.id.classify_button_3:
+			if (2 == currentPage) {
+				return;
+			}
+			currentPage = 2;
+			classify_button_1.setSelected(false);
+			classify_button_2.setSelected(false);
+			classify_button_3.setSelected(true);
 			list_data.clear();
-			classify_button_1.setTextColor(getResources().getColor(
-					R.color.black));
-			classify_button_2.setTextColor(getResources().getColor(
-					R.color.black));
-			classify_button_3.setTextColor(getResources().getColor(
-					R.color.base_green_color));
 			orderby = "n_xiaoliang";
 			requestClass(currenpage, int_tag, id);
 			break;

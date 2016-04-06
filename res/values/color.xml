@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    
-      <color name="navpage">#FFE1E8EB</color>
+
+    <color name="navpage">#FFE1E8EB</color>
     <color name="text_gray">#bbb</color>
     <color name="text_orange">#FFAD00</color>
     <color name="base_green_color">#0B6201</color>
-    
     <color name="Tran">#00000000</color>
     <color name="textColor">#808080</color>
     <color name="grey_light">#eee</color>
@@ -81,5 +79,9 @@
     <color name="white">#ffffffff</color>
     <color name="white_60_alpha">#99ffffff</color>
     <color name="white_80_alpha">#bbffffff</color>
-    
+    <color name="btn_green_press">#009900</color>
+    <color name="bg_gray">#F7F7F7</color>
+    <color name="title_front">#525151</color>
+    <color name="btn_blue_no_press">#3FB2FF</color>
+
 </resources>

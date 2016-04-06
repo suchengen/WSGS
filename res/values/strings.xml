@@ -20,5 +20,17 @@
     <string name="title_activity_change_phone">ChangePhoneActivity</string>
     <string name="get_class_error">获取分类失败</string>
     <string name="more">更多</string>
-
+    <string name="classify">分类</string>
+    <string name="check_update">检查更新</string>
+    <string name="checking_update">正在检查更新...</string>
+    <string name="product_list">产品列表</string>
+    <string name="btn_back">&#60; 返回</string>
+    <string name="btn_share">分享</string>
+    <string name="product_detail">商品详情</string>
+    <string name="add_cart">加入购物车</string>
+    <string name="buy">购买</string>
+    <string name="user_comment">用户评价</string>
+    <string name="product_image_detail">商品图片详情</string>
+	<string name="you_may_interest_product_">你可能感兴趣的商品：</string>
+    
 </resources>

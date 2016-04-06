@@ -146,7 +146,7 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="#afa"
-            android:src="@drawable/ic_launcher" />
+            android:scaleType="fitXY" />
     </LinearLayout>
 
     <LinearLayout

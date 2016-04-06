@@ -116,6 +116,9 @@ public class MainFragmentClassListAdapter extends ListAdapter<ClassListBean> {
 			bitmapUtils.display(holder.ivSecondImg, bean.getNewslist().get(1)
 					.getN_pic());
 		}
+		if (null != bean.getAppad()) {
+			bitmapUtils.display(holder.ivAdImg, bean.getAppad());
+		}
 		return convertView;
 	}
 

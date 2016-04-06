@@ -25,6 +25,7 @@ import com.catdog.util.SharedPreferencesUtil;
 import com.catdog.util.URLConstant;
 import com.catdog.wsgs.R;
 import com.lidroid.xutils.HttpUtils;
+import com.umeng.update.UmengUpdateAgent;
 
 public class MainActivity extends MyActivity implements
 		OnRgsExtraCheckedChangedListener {
@@ -50,6 +51,7 @@ public class MainActivity extends MyActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		UmengUpdateAgent.update(this);
 		initView();
 		initData();
 		initHttpUtil();

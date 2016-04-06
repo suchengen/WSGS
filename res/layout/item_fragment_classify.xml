@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
     android:orientation="vertical" >
-    
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_fragment_classify_image"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dongpin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/iv_fragment_classify_arrow"
+        android:layout_toRightOf="@+id/iv_fragment_classify_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_fragment_classify_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水果" />
+
+        <TextView
+            android:id="@+id/tv_fragment_classify_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="苹果类/葡萄类/香蕉类" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_fragment_classify_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/order_right" />
+
+</RelativeLayout>

@@ -102,5 +102,7 @@
     <!-- tag -->
 
     <dimen name="main_fragment_list_second_image_size">48dp</dimen>
-
-</resources>
+    <dimen name="fragment_classify_top_height">48dp</dimen>
+    <dimen name="fragment_classify_title_size">18sp</dimen>
+	
+    </resources>
